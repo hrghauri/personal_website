@@ -23,12 +23,14 @@
   const navItems = document.querySelector(".main-nav-items");
   const nav = document.querySelector(".nav");
   const main = document.querySelector(".main");
+  const footerText = document.querySelector(".footer-text");
   const navLinks = document.querySelectorAll(".main-nav-item");
 
   burger.addEventListener("click", function() {
     navItems.classList.toggle("navItemsOnBurgerClick");
     nav.classList.toggle("navOnBurgerClick");
     main.classList.toggle("mainOnBurgerClick");
+    footerText.classList.toggle("footerOnBurgerClick");
     navLinks.forEach(function(navLink, index) {
       if (navLink.style.animation) navLink.style.animation = "";
       else
@@ -39,3 +41,7 @@
     burger.classList.toggle("navIconToggle");
   });
 })();
+
+particlesJS.load("particles-js", "particles.json", function() {
+  console.log("callback - particles.js config loaded");
+});
