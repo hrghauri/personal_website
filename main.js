@@ -1,7 +1,3 @@
-// new TypeIt(".type-writter-text", {
-//   strings: "Welcome to my website!"
-// }).go();
-
 (function writeWelcomeMessage() {
   let secondLineLength = 0;
   new TypeIt(".welcome-text", {
@@ -19,6 +15,27 @@
     .type("I am a Full-Stack Software Developer.")
     .pause(2000)
     .delete(secondLineLength)
-    .type("haha")
     .go();
+})();
+
+(function navSlide() {
+  const burger = document.querySelector(".burger");
+  const navItems = document.querySelector(".main-nav-items");
+  const nav = document.querySelector(".nav");
+  const main = document.querySelector(".main");
+  const navLinks = document.querySelectorAll(".main-nav-item");
+
+  burger.addEventListener("click", function() {
+    navItems.classList.toggle("navItemsOnBurgerClick");
+    nav.classList.toggle("navOnBurgerClick");
+    main.classList.toggle("mainOnBurgerClick");
+    navLinks.forEach(function(navLink, index) {
+      if (navLink.style.animation) navLink.style.animation = "";
+      else
+        navLink.style.animation = `navLinkFade 0.5s forwards ${index / 5 +
+          0.2}s`;
+    });
+
+    burger.classList.toggle("navIconToggle");
+  });
 })();
