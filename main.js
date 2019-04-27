@@ -45,3 +45,10 @@
 particlesJS.load("particles-js", "particles.json", function() {
   console.log("callback - particles.js config loaded");
 });
+
+document.querySelector(".project-link").addEventListener("click", function(e) {
+  e.preventDefault();
+  document
+    .querySelector(".section-projects")
+    .scrollIntoView({ behavior: "smooth" });
+});
