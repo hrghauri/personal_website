@@ -25,6 +25,9 @@ body {
   height: 100%;
   z-index: -1;
   background: #1e272e;
+  background-image: url(stars-image.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .section-header {
