@@ -18,29 +18,22 @@
     .go();
 })();
 
-// (function navSlide() {
-//   const burger = document.querySelector(".burger");
-//   const navItems = document.querySelector(".main-nav-items");
-//   const nav = document.querySelector(".nav");
-//   const main = document.querySelector(".main");
-//   const footerText = document.querySelector(".footer-text");
-//   const navLinks = document.querySelectorAll(".main-nav-item");
+(function navSlide() {
+  const burger = document.querySelector(".burger");
+  const navItemsList = document.querySelector(".nav-items-list");
+  const navListItem = document.querySelectorAll(".nav-list-item");
 
-//   burger.addEventListener("click", function() {
-//     navItems.classList.toggle("navItemsOnBurgerClick");
-//     nav.classList.toggle("navOnBurgerClick");
-//     main.classList.toggle("mainOnBurgerClick");
-//     footerText.classList.toggle("footerOnBurgerClick");
-//     navLinks.forEach(function(navLink, index) {
-//       if (navLink.style.animation) navLink.style.animation = "";
-//       else
-//         navLink.style.animation = `navLinkFade 0.5s forwards ${index / 5 +
-//           0.2}s`;
-//     });
-
-//     burger.classList.toggle("navIconToggle");
-//   });
-// })();
+  burger.addEventListener("click", function() {
+    navItemsList.classList.toggle("nav-items-list-OnBurgerIconClick");
+    navListItem.forEach(function(navLink, index) {
+      if (navLink.style.animation) navLink.style.animation = "";
+      else
+        navLink.style.animation = `navLinkFade 0.5s forwards ${index / 5 +
+          0.2}s`;
+    });
+    burger.classList.toggle("burger-icon-toggle");
+  });
+})();
 
 particlesJS.load("particles-js", "particles.json", function() {
   console.log("callback - particles.js config loaded");
