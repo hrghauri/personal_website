@@ -68,12 +68,12 @@ NAV
   align-items: center;
 }
 
-.logo object {
+/* .logo object {
   position: relative;
-  top: 2px;
-  height: 42px;
-  margin-left: 14px;
-}
+  top: 3px;
+  height: 34px;
+  margin-left: 72px;
+} */
 
 .nav-items-list {
   margin-left: auto;
