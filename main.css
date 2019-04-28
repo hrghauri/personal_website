@@ -15,10 +15,15 @@
   --responsive-nav-bar-color: #1e272e;
 }
 
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: var(--text-color);
-  overflow-x: hidden;
 }
 
 #particles-js canvas {
