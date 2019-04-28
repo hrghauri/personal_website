@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-    minimum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,600"
+      href="https://fonts.googleapis.com/css?family=Lato:300i,300,400"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="particles-js"></div>
-
-    <header class="header">
+    <header class="section-header">
       <nav class="nav">
-        <ul class="main-nav-items">
-          <li class="main-nav-item">
+        <!-- <div class="logo">
+          <object data="white-log.svg" type="image/svg+xml"> </object>
+        </div> -->
+
+        <ul class="nav-items-list">
+          <li class="nav-list-item">
             <a href="HarisGhauriResume.pdf" target="_blank">Resume</a>
           </li>
-          <li class="main-nav-item project-link">
-            <a href="#section-projects">Projects</a>
+          <li class="nav-list-item project-link">
+            <a href="https://github.com/hrghauri" target="_blank">Projects</a>
           </li>
-          <li class="main-nav-item">
+          <li class="nav-list-item">
             <a href="https://www.linkedin.com/in/haris-ghauri/ " target="_blank"
               >Connect</a
             >
           </li>
-          <li class="main-nav-item"><a href="#">Blog</a></li>
         </ul>
 
         <div class="burger">
@@ -47,25 +45,29 @@
         </div>
       </nav>
 
-      <div class="main">
-        <div class="info">
-          <h1 class="name">
-            Haris Ghauri
-          </h1>
-          <div class="welcome-text"></div>
-          <div class="intro-text"></div>
-        </div>
+      <div class="intro-card">
+        <h1 class="hidden-name">Haris Ghauri</h1>
+        <h1 class="name">
+          <span
+            ><a
+              href="https://www.linkedin.com/in/haris-ghauri/ "
+              target="_blank"
+              >&#x0126;</a
+            ></span
+          >aris<span
+            ><a
+              href="https://www.linkedin.com/in/haris-ghauri/ "
+              target="_blank"
+              >&#x01E4;</a
+            ></span
+          >hauri
+        </h1>
+        <div class="type-writter-effect"></div>
       </div>
     </header>
-    <footer class="footer">
-      <div class="footer-text">
-        &copy; Haris Ghauri 2019
-      </div>
-    </footer>
-    <!--     
-    <section id="section-projects" class="section section-projects">
-      Projects
-    </section class="section section-projects"> -->
+    <div class="section-footer">
+      &copy; 2019 by Haris Ghauri
+    </div>
 
     <script src="main.js"></script>
   </body>
