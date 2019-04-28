@@ -1,21 +1,20 @@
 (function writeWelcomeMessage() {
-  let secondLineLength = 0;
-  new TypeIt(".type-writter-effect", {
-    deleteSpeed: 60,
-    speed: 120,
-    loop: true
-  })
-    .type("Hi, Stranger!")
-    .pause(2500)
-    .delete()
-    .pause(1000)
-    .type("Welcome to my website!")
-    .pause(2000)
-    .break()
-    .type("I am a Full-Stack Software Developer.")
-    .pause(2000)
-    .delete(secondLineLength)
-    .go();
+  var app = document.querySelector(".type-writter-effect");
+
+  (function callback() {
+    new Typewriter(app)
+      .typeString("Hi, Stranger!")
+      .pauseFor(1500)
+      .deleteAll()
+      .typeString("Welcome to my website!")
+      .pauseFor(1500)
+      .typeString("<br>")
+      .typeString("I am a Full Stack Software Developer.")
+      .pauseFor(1500)
+      .deleteAll()
+      .start()
+      .callFunction(callback);
+  })();
 })();
 
 (function navSlide() {
