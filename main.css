@@ -139,7 +139,15 @@ INTRO-CARD
   cursor: pointer;
 }
 
-.name span:hover {
+.name span a {
+  text-decoration: none;
+}
+
+.name span a:link,
+.name span a:visited {
+  color: #2d3436;
+}
+.name span a:hover {
   color: white;
 }
 
