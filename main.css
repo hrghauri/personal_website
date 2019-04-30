@@ -257,7 +257,7 @@ INTRO-CARD
 
   .nav-items-list {
     width: 50%;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     top: 0vh;
     background: var(--responsive-nav-bar-color);
@@ -274,10 +274,11 @@ INTRO-CARD
 
   .burger {
     display: block;
-    margin-left: auto;
-    margin-right: 18px;
+    right: 2vh;
+    top: 2vh;
     cursor: pointer;
     z-index: 2;
+    position: fixed;
   }
 }
 
@@ -308,6 +309,7 @@ INTRO-CARD
 
 .nav-items-list-OnBurgerIconClick {
   transform: translateX(0%);
+  position: fixed;
 }
 
 .burger-icon-toggle .line1 {
